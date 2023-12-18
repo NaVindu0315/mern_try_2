@@ -31,16 +31,9 @@ const userform = props => {
                     fontSize:'16px',
                     width:'100px',
                     display:'block',
+                }}
+            > ID </Typography>
 
-
-
-                }
-            }
-            >
-
-                ID
-
-            </Typography>
 
 
             </Grid>
