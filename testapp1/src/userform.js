@@ -21,8 +21,8 @@ const userform = props => {
 
             </Grid>
 
-            <Typography>
-                
+            <Typography component={'label'}>
+
             </Typography>
 
 
