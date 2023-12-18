@@ -18,5 +18,8 @@
 }
 
 .usr-btn{
-  
+  font-size: 18px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 10px;
 }
