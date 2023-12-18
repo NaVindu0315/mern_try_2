@@ -87,8 +87,11 @@ const userform = props => {
                 <Button 
                 sx ={{
                     margin:'auto',
-                    marginBottom:'20px';
+                    marginBottom:'20px',
+                    backgroundColor :'#00c6e6',
+                    color:'#000000',
                     
+
                 }}
                 
                 />
