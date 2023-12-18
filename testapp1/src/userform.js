@@ -74,7 +74,7 @@ const userform = props => {
                 name = "name"
                 sx ={{width:'400px'}}
                 value={''}
-                onChane={e =>{}}
+                onChange={e =>{}}
 
 
 
@@ -92,7 +92,7 @@ const userform = props => {
                     color:'#000000',
                     marginLeft:'15px',
                     marginTop:'20px',
-                    
+                    '&:hover'
 
                 }}
                 
