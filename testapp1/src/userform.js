@@ -33,6 +33,11 @@ const userform = props => {
                     display:'block',
                 }}
             > ID </Typography>
+            <Input
+                type="number"
+                
+            ></Input>
+
 
 
 
