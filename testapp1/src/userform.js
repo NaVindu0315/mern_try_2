@@ -1,8 +1,15 @@
 const userform = props => {
     return (
-        <Grid>
-
+        <Grid
+            container
+            spacing={2}
+            sx={
+                {backgroundColor}
+            }
+        >
             
+
+
         </Grid>
     );
 }
