@@ -29,7 +29,9 @@ const userform = props => {
                     color:'#000000',
                     marginRight:'20px',
                     fontSize:'16px',
+                    width:'100px',
                     
+
 
                 }
             }
