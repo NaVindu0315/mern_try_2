@@ -47,7 +47,7 @@ const userform = props => {
 
 //new text field in after two grids
 
-            ></Input>
+            />
 
             </Grid>
             <Grid item xs={12}>
@@ -78,7 +78,7 @@ const userform = props => {
 
 
 
-            ></Input>
+            />
 
             </Grid>
 
