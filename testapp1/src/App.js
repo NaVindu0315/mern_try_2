@@ -8,7 +8,7 @@ function App() {
        <h1>
         Welcome Pako
        </h1>
-       <button className="usr-btn">Athult yamn pakaya</button>
+       <button className="usr-btn">Athulta yamn pky</button>
       </header>
     </div>
   );
