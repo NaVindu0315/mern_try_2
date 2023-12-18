@@ -90,6 +90,7 @@ const userform = props => {
                     marginBottom:'20px',
                     backgroundColor :'#00c6e6',
                     color:'#000000',
+                    marginLeft:'15px',
                     
 
                 }}
