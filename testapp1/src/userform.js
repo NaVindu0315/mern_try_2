@@ -18,9 +18,6 @@ const userform = props => {
                 <Typography component={'h1'} sx={{color:'#000000'}}></Typography>
                  </Grid>
             <Grid>
-
-            </Grid>
-
             <Typography 
             component={'label'}
             htmlFor="id"
@@ -44,6 +41,10 @@ const userform = props => {
 
 
             ></Input>
+
+            </Grid>
+
+           
 
 
 
