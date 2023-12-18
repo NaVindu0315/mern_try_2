@@ -37,7 +37,9 @@ const userform = props => {
                 type="number"
                 id='id'
                 name = "id"
+                sx ={{width:'400px'}}
                 
+
             ></Input>
 
 
