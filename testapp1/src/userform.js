@@ -92,7 +92,11 @@ const userform = props => {
                     color:'#000000',
                     marginLeft:'15px',
                     marginTop:'20px',
-                    '&:hover'
+                    '&:hover':
+                    {
+                        opacity:'0.7',
+                        
+                    }
 
                 }}
                 
