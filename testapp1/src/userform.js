@@ -14,10 +14,13 @@ const userform = props => {
                 }
             }
         >
+            
             <Grid item xs={12}>
                 <Typography component={'h1'} sx={{color:'#000000'}}></Typography>
                  </Grid>
-            <Grid>
+            <Grid item xs={12} sm={6} sx={{ display:'flex'}}
+            
+            >
             <Typography 
             component={'label'}
             htmlFor="id"
