@@ -17,7 +17,17 @@ const userform = props => {
             <Grid item xs={12}>
                 <Typography component={'h1'} sx={{color:'#000000'}}></Typography>
                  </Grid>
+            <Grid>
+
             </Grid>
+
+            <Typography>
+                
+            </Typography>
+
+
+            </Grid>
+
     );
 }
 export default userform;
