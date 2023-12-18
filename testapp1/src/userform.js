@@ -1,4 +1,4 @@
-import {Grid, Typography} from "@mui/material";
+import {Button, Grid, Typography} from "@mui/material";
 
 const userform = props => {
     return (
@@ -50,10 +50,43 @@ const userform = props => {
             ></Input>
 
             </Grid>
+            <Grid item xs={12}>
+                <Typography component={'h1'} sx={{color:'#000000'}}></Typography>
+                 </Grid>
+            <Grid item xs={12} sm={6} sx={{ display:'flex'}}
+            
+            >
+            <Typography 
+            component={'label'}
+            htmlFor="id"
+            sx={
+                {
+                    color:'#000000',
+                    marginRight:'20px',
+                    fontSize:'16px',
+                    width:'100px',
+                    display:'block',
+                }}
+            > Name</Typography>
+            <Input
+                type="text"
+                id='name'
+                name = "name"
+                sx ={{width:'400px'}}
+                value={''}
+                onChane={e =>{}}
+
+
+
+            ></Input>
+
+            </Grid>
 
            
 
-
+                <Button
+                
+                ></>
 
 
             </Grid>
