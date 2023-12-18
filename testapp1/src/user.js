@@ -4,6 +4,6 @@ const users =() =>
 {
 return(
     <userform/>
-)    ;
+);
 }
 export default users;
