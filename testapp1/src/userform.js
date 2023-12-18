@@ -38,7 +38,9 @@ const userform = props => {
                 id='id'
                 name = "id"
                 sx ={{width:'400px'}}
+                value={''}
                 
+
 
             ></Input>
 
