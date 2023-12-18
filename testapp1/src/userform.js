@@ -4,7 +4,10 @@ const userform = props => {
             container
             spacing={2}
             sx={
-                {backgroundColor}
+                {
+                    backgroundColor: '#ffffff',
+                    
+                }
             }
         >
             
