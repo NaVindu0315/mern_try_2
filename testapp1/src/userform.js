@@ -30,7 +30,8 @@ const userform = props => {
                     marginRight:'20px',
                     fontSize:'16px',
                     width:'100px',
-                    
+                    display:'block',
+
 
 
                 }
