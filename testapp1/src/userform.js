@@ -8,7 +8,8 @@ const userform = props => {
             sx={
                 {
                     backgroundColor: '#ffffff',
-                    marginBottom: ''
+                    marginBottom: '30px',
+                    display:'block',
 
                 }
             }
