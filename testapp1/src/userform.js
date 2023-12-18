@@ -1,4 +1,4 @@
-import {Grid} from "@mui/material";
+import {Grid, Typography} from "@mui/material";
 
 const userform = props => {
     return (
@@ -16,6 +16,7 @@ const userform = props => {
         >
             <Grid item
                     xs={12}>
+                <Typography component={'h1'}></Typography>
 
 
             </Grid>
