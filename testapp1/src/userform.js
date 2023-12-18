@@ -21,7 +21,17 @@ const userform = props => {
 
             </Grid>
 
-            <Typography component={'label'}htmlFor="id">
+            <Typography 
+            component={'label'}
+            htmlFor="id"
+            sx={
+                {
+                    color:'#000000',
+                    marginRight:'20px',
+                }
+            }
+            >
+
                 ID
 
             </Typography>
