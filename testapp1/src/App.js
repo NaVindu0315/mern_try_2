@@ -14,7 +14,7 @@ function App() {
        <h1>
         Welcome Pako
        </h1>
-       <button className="usr-btn">Athulta yamn pky</button>
+       <button className="usr-btn" onClick={()=>navigate('/user')}>Athulta yamn pky</button>
       </header>
     </div>
   );
