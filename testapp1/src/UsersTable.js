@@ -1,5 +1,5 @@
 
-import { paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Button} from "@mui/material";
+import { paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Button, Table} from "@mui/material";
 const UsersTable = ({rows}) =>
 {
 <TableContainer 
