@@ -95,7 +95,8 @@ const Userform = (props) => {
             backgroundColor: "#00c6e6",
           },
         }}
-        onClick={
+        onClick={()=>
+          navigate('/')
           
         }
       >
