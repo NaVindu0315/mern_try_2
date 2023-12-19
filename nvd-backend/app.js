@@ -14,4 +14,6 @@ app.use(
 );
 app.use(express.json());
 
+//creating getAPI data retrieving api
+
 module.exports = app;
