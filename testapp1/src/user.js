@@ -21,7 +21,8 @@ return(
      sx={{
 
         width: 'calc(100%- 100px)',
-        margin
+        margin : 'auto'
+        
      }}
     >
           <Userform/>
