@@ -22,7 +22,11 @@ const UsersTable = ({rows}) =>
                     {
                         rows.map(row => 
                             (
-                                <TableRow>
+                                <TableRow key={row.id}
+                                sx={{
+                                    
+                                }}
+                                >
                                      <TableCell component='th' scope="row">
                                     (row.id)
 
