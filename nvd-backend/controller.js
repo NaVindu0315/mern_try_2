@@ -10,3 +10,12 @@ const users =
 
     }
 ];
+
+//creating function
+const getUsers = (cb) =>
+{
+    cb(users);
+};
+
+//creating a function to get the user by id 
+const getUsersByID =
