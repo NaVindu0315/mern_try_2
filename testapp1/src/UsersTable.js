@@ -30,12 +30,12 @@ const UsersTable = ({rows}) =>
                                 onClick={
                                     () =>
                                     {
-                                        
+
                                     }
                                 }
                                 
                                 >
-
+                                Update
                                 </Button>
                              </TableCell>
                             </TableRow>
