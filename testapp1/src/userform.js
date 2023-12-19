@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Userform = (props) => {
   //declaring stat
    const [id,setid] = useState(0);
+   const [name,setname] = useState("");
 
 
 
