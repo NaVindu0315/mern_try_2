@@ -11,7 +11,7 @@ const UsersTable = props =>
                             ID
                         </TableCell>
                         <TableCell>
-                            ID
+                            Name
                         </TableCell>
                         <TableCell>
                             ID
