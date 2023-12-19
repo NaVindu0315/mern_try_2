@@ -10,6 +10,12 @@ const UsersTable = props =>
                         <TableCell>
                             ID
                         </TableCell>
+                        <TableCell>
+                            ID
+                        </TableCell>
+                        <TableCell>
+                            ID
+                        </TableCell>
                     </TableRow>
                 </TableHead>
             </Table>
