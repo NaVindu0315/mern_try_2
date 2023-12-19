@@ -19,7 +19,7 @@ const Users =() =>
 return(
     <Box>
           <Userform/>
-    <UsersTable/>
+         <UsersTable rows= {users} />
 
     </Box>
   
