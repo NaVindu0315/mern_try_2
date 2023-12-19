@@ -17,6 +17,7 @@ const Users =() =>
 {
 return(
     <Userform/>
+    <UsersTable/>
 );
 }
 export default Users;
