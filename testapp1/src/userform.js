@@ -1,6 +1,6 @@
 import {Button, Grid, Typography} from "@mui/material";
 
-const Userform = props => {
+const userform = props => {
     return (
 
         <Grid
@@ -16,9 +16,10 @@ const Userform = props => {
             }
         >
         
-           <Grid item xs={12}>
-                <Typography component={'h1'} sx={{color:'#000000'}}>ddd</Typography>
-                
+          
+            
+            <Grid item xs={12}>
+                <Typography component={'h1'} sx={{color:'#000000'}}></Typography>
                  </Grid>
             <Grid item xs={12} sm={6} sx={{ display:'flex'}}
             
@@ -35,18 +36,18 @@ const Userform = props => {
                     display:'block',
                 }}
             > ID </Typography>
-            <input
-  type="text"
-  id="name"
-  // Remove or replace with a valid prop
-  // sx={{ width: "400px" }}
-  value=""  // Choose consistent way to set initial value
-  onChange={e => {
-    // Implement your logic to handle user input
-    console.log(e.target.value);  // Example: log the new value
-  }}
-/>
+            <Input
+                type="number"
+                id='id'
+                name = "id"
+                sx ={{width:'400px'}}
+                value={''}
+                onChane={e =>{}}
 
+
+//new text field in after two grids
+
+            />
 
             </Grid>
             <Grid item xs={12}>
@@ -67,20 +68,17 @@ const Userform = props => {
                     display:'block',
                 }}
             > Name</Typography>
-           <input
-  type="text"
-  id="name"
-  // Remove or replace with a valid prop
-  // sx={{ width: "400px" }}
-  value=""  // Choose consistent way to set initial value
-  onChange={e => {
-    // Implement your logic to handle user input
-    console.log(e.target.value);  // Example: log the new value
-  }}
-/>
+            <Input
+                type="text"
+                id='name'
+                name = "name"
+                sx ={{width:'400px'}}
+                value={''}
+                onChange={e =>{}}
 
-            
 
+
+            />
 
             </Grid>
 
@@ -109,4 +107,4 @@ const Userform = props => {
 
     );
 }
-export default Userform;
+export default userform;
