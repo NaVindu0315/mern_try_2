@@ -1,4 +1,5 @@
 //importing
+import { Box } from "@mui/material";
 import Userform from "./userform";
 import UsersTable from "./UsersTable";
 
@@ -16,8 +17,12 @@ const users = [
 const Users =() =>
 {
 return(
-    <Userform/>
+    <Box>
+          <Userform/>
     <UsersTable/>
+
+    </Box>
+  
 );
 }
 export default Users;
