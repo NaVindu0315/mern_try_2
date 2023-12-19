@@ -1,5 +1,8 @@
 
 import { Paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Button, Table} from "@mui/material";
+const IdCell = ({ row }) => <TableCell>{row.id}</TableCell>;
+
+const NameCell = ({ row }) => <TableCell>{row.name}</TableCell>;
 const UsersTable = ({rows}) =>
 {
     return(
