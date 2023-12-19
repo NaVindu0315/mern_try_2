@@ -6,6 +6,7 @@ const users =
     },
     {
         id:2,
-        
+        name:'pakaya',
+
     }
 ]
