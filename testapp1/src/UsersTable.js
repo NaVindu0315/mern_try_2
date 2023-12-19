@@ -22,10 +22,14 @@ const UsersTable = ({rows}) =>
                     {
                         rows.map(row => 
                             (
-                                <TableCell component='th' scope="row">
+                                <TableRow>
+                                     <TableCell component='th' scope="row">
                                     (row.id)
 
                                 </TableCell>
+
+                                </TableRow>
+                               
                             )
                             )
                     }
