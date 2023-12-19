@@ -65,7 +65,7 @@ const Userform = (props) => {
           name="name"
           sx={{ width: "400px" }}
           value={name}
-          //onChange={handleChangeName}
+          onChange={e=>setname(e.target.value)}
         />
       </Grid>
      
