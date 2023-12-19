@@ -2,6 +2,7 @@
 import { Paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Button, Table} from "@mui/material";
 const UsersTable = ({rows}) =>
 {
+    return(
 <TableContainer 
         component={Paper}>
             <Table>
@@ -68,5 +69,6 @@ const UsersTable = ({rows}) =>
             </Table>
 
 </TableContainer>
+    );
 }
 export default UsersTable;
