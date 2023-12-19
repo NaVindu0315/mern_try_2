@@ -1,6 +1,6 @@
 import {Button, Grid, Typography} from "@mui/material";
 
-const userform = props => {
+const Userform = props => {
     return (
 
         <Grid
@@ -41,8 +41,8 @@ const userform = props => {
                 id='id'
                 name = "id"
                 sx ={{width:'400px'}}
-                value={''}
-                onChane={e =>{}}
+                value={'id'}
+                onChange={e =>{}}
 
 
 //new text field in after two grids
@@ -73,7 +73,7 @@ const userform = props => {
                 id='name'
                 name = "name"
                 sx ={{width:'400px'}}
-                value={''}
+                value={'name'}
                 onChange={e =>{}}
 
 
@@ -107,4 +107,4 @@ const userform = props => {
 
     );
 }
-export default userform;
+export default Userform;
