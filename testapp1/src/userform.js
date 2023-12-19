@@ -31,7 +31,7 @@ const Userform = (props) => {
         </Typography>
         <Input
           type="number"
-         // id="id"
+          id="id"
           name="id"
           sx={{ width: "400px" }}
           //value={id}
@@ -54,36 +54,14 @@ const Userform = (props) => {
         </Typography>
         <Input
           type="text"
-          //id="name"
+          id="name"
           name="name"
           sx={{ width: "400px" }}
           //value={name}
           //onChange={handleChangeName}
         />
       </Grid>
-      <Grid item xs={12} sm={6} sx={{ display: "flex" }}>
-        <Typography
-          component="label"
-          htmlFor="newField" // Update this to your actual ID
-          sx={{
-            color: "#000000",
-            marginRight: "20px",
-            fontSize: "16px",
-            width: "100px",
-            display: "block",
-          }}
-        >
-          New Field Label
-        </Typography>
-        <Input
-          type="text" // Update this to your desired type
-          //id="newField" // Update this to your actual ID
-          name="newField" // Update this to your actual name
-          sx={{ width: "400px" }}
-          //value={newField}
-          //onChange={handleChangeNewField}
-        />
-      </Grid>
+     
       <Button
         sx={{
           margin: "auto",
