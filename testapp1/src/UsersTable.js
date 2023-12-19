@@ -20,7 +20,7 @@ const UsersTable = ({rows}) =>
                 </TableHead>
                 <TableBody>
                     {
-                        rows
+                        rows.map()
                     }
 
 
