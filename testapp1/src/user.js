@@ -1,9 +1,9 @@
 //importing
-import userform from "./userform";
-const users =() =>
+import Userform from "./userform";
+const Users =() =>
 {
 return(
-    <userform/>
+    <Userform/>
 );
 }
-export default users;
+export default Users;
