@@ -15,6 +15,7 @@ root.render(
     <Route path='/' element ={<App/>}/>
     <Route path='/userform' element={<Userform/>}/>
     <Route path='/user' element={<Users/>}/>
+    <Route path='/UsersTable' element={<></>}/>
   </Routes>
   
   </BrowserRouter>
