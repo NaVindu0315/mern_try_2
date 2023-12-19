@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Grid, Typography, Input } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
 const Userform = (props) => {
+  //declaring stat
+   const [id,setid] = useState(0);
+
 
 
   const navigate = useNavigate();
