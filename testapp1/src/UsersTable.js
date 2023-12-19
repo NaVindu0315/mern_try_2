@@ -28,6 +28,10 @@ const UsersTable = ({rows}) =>
                                      <TableCell component='th' scope="row">
                                     (row.id)
 
+                                </TableCell> 
+                                <TableCell component='th' scope="row">
+                                    (row.name)
+
                                 </TableCell>
 
                                 </TableRow>
