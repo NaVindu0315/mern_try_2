@@ -1,6 +1,6 @@
 
 import { paper, TableCell, TableContainer, TableHead, TableRow , TableBody} from "@mui/material";
-const UsersTable = props =>
+const UsersTable = ({rows}) =>
 {
 <TableContainer 
         component={paper}>
@@ -19,6 +19,9 @@ const UsersTable = props =>
                     </TableRow>
                 </TableHead>
                 <TableBody>
+                    {
+                        rows
+                    }
 
 
                 </TableBody>
