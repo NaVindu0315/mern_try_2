@@ -37,6 +37,17 @@ const UsersTable = ({rows}) =>
                                 >
                                 Update
                                 </Button>
+                                <Button sx={{margin:'0px 10px'}}
+                                onClick={
+                                    () =>
+                                    {
+
+                                    }
+                                }
+                                
+                                >
+                                delete
+                                </Button>
                              </TableCell>
                             </TableRow>
                                
