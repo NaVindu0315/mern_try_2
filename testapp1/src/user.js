@@ -1,5 +1,6 @@
 //importing
 import Userform from "./userform";
+import UsersTable from "./UsersTable";
 
 const users = [
     {
