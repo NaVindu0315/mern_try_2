@@ -1,5 +1,5 @@
 
-import { TableContainer, TableHead, TableRow } from "@mui/material";
+import { TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 const UsersTable = props =>
 {
 <TableContainer 
@@ -7,7 +7,9 @@ const UsersTable = props =>
             <Table>
                 <TableHead>
                     <TableRow>
-                        
+                        <TableCell>
+                            ID
+                        </TableCell>
                     </TableRow>
                 </TableHead>
             </Table>
