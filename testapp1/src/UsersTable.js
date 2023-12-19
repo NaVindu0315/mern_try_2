@@ -1,0 +1,77 @@
+
+import { Paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Button, Table} from "@mui/material";
+const IdCell = ({ row }) => <TableCell>{row.id}</TableCell>;
+
+const NameCell = ({ row }) => <TableCell>{row.name}</TableCell>;
+const UsersTable = ({rows}) =>
+{
+    return(
+<TableContainer 
+        component={Paper}>
+            <Table>
+                <TableHead>
+                    <TableRow>
+                        <TableCell>
+                            ID
+                        </TableCell>
+                        <TableCell>
+                            Name
+                        </TableCell>
+                        <TableCell>
+                            Actions
+                        </TableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {
+                        rows.length > 0 ?  rows.map((row) => 
+                            (
+                            <TableRow key={row.id} sx ={{'&:last-child td,&:last-child th':{border:0}}}>
+                             <IdCell row={row} />
+                            <NameCell row={row} />
+                             <TableCell>
+                                <Button sx={{margin:'0px 10px'}}
+                                onClick={
+                                    () =>
+                                    {
+
+                                    }
+                                }
+                                
+                                >
+                                Update
+                                </Button>
+                                <Button sx={{margin:'0px 10px'}}
+                                onClick={
+                                    () =>
+                                    {
+
+                                    }
+                                }
+                                
+                                >
+                                delete
+                                </Button>
+                             </TableCell>
+                            </TableRow>
+                               
+                            )
+                            ):
+                            (
+                                <TableRow sx ={{'&:last-child td,&:last-child th':{border:0}}}>
+
+                            <TableCell component='th' scope="row">No Data</TableCell> 
+                                </TableRow>
+
+                            )
+
+                    }
+
+
+                </TableBody>
+            </Table>
+
+</TableContainer>
+    );
+}
+export default UsersTable;

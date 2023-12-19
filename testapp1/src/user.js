@@ -1,9 +1,39 @@
 //importing
-import userform from "./userform";
-const users =() =>
+import { Box } from "@mui/material";
+import Userform from "./userform";
+import UsersTable from "./UsersTable";
+
+const users = [
+    {
+        id:1,
+        name:'Navindu',
+    },
+    {
+        id:2,
+        name:'pakaya',
+    },
+    {
+        id:3,
+        name:'hutti',
+    }
+
+];
+const Users =() =>
 {
 return(
-    <userform/>
+    <Box 
+     sx={{
+
+        width: 'calc(100%- 100px)',
+        margin : 'auto'
+
+     }}
+    >
+          <Userform/>
+         <UsersTable rows= {users} />
+
+    </Box>
+  
 );
 }
-export default users;
+export default Users;

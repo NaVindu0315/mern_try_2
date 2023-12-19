@@ -2,8 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import userform from './userform';
+import Userform from './userform';
 import reportWebVitals from './reportWebVitals';
+import Users from './user';
+import UsersTable from './UsersTable';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,7 +13,10 @@ root.render(
  
   <BrowserRouter>
   <Routes>
-    <Route path='/' element ={<userform/>}/>
+    <Route path='/' element ={<App/>}/>
+    <Route path='/userform' element={<Userform/>}/>
+    <Route path='/user' element={<Users/>}/>
+    <Route path='/UsersTable' element={<UsersTable/>}/>
   </Routes>
   
   </BrowserRouter>
