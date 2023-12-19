@@ -41,7 +41,7 @@ const Userform = (props) => {
           id="id"
           name="id"
           sx={{ width: "400px" }}
-          //value={id}
+          value={id}
           //onChange={handleChangeId}
         />
       </Grid>
@@ -64,7 +64,7 @@ const Userform = (props) => {
           id="name"
           name="name"
           sx={{ width: "400px" }}
-          //value={name}
+          value={name}
           //onChange={handleChangeName}
         />
       </Grid>
