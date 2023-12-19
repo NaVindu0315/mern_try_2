@@ -5,7 +5,7 @@ import App from './App';
 import Userform from './userform';
 import reportWebVitals from './reportWebVitals';
 import Users from './user';
-import Use
+import UsersTable from './UsersTable';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,7 +16,7 @@ root.render(
     <Route path='/' element ={<App/>}/>
     <Route path='/userform' element={<Userform/>}/>
     <Route path='/user' element={<Users/>}/>
-    <Route path='/UsersTable' element={<></>}/>
+    <Route path='/UsersTable' element={<UsersTable/>}/>
   </Routes>
   
   </BrowserRouter>
