@@ -20,7 +20,14 @@ const UsersTable = ({rows}) =>
                 </TableHead>
                 <TableBody>
                     {
-                        rows.map()
+                        rows.map(row => 
+                            (
+                                <TableCell component='th' scope="row">
+                                    (row.id)
+
+                                </TableCell>
+                            )
+                            )
                     }
 
 
