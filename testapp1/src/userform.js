@@ -42,7 +42,7 @@ const Userform = (props) => {
           name="id"
           sx={{ width: "400px" }}
           value={id}
-          //onChange={handleChangeId}
+          onChange={e => setid(e.target.value)}
         />
       </Grid>
       <Grid item xs={12} sm={6} sx={{ display: "flex" }}>
