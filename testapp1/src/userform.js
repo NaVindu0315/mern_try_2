@@ -1,6 +1,6 @@
 import {Button, Grid, Typography} from "@mui/material";
 
-const userform = props => {
+const Userform = props => {
     return (
 
         <Grid
@@ -16,10 +16,9 @@ const userform = props => {
             }
         >
         
-          
-            
-            <Grid item xs={12}>
-                <Typography component={'h1'} sx={{color:'#000000'}}></Typography>
+           <Grid item xs={12}>
+                <Typography component={'h1'} sx={{color:'#000000'}}>ddd</Typography>
+                
                  </Grid>
             <Grid item xs={12} sm={6} sx={{ display:'flex'}}
             
@@ -110,4 +109,4 @@ const userform = props => {
 
     );
 }
-export default userform;
+export default Userform;
