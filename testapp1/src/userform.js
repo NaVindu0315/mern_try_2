@@ -36,18 +36,18 @@ const userform = props => {
                     display:'block',
                 }}
             > ID </Typography>
-            <Input
-                type="number"
-                id='id'
-                name = "id"
-                sx ={{width:'400px'}}
-                value={''}
-                onChane={e =>{}}
+            <input
+  type="text"
+  id="name"
+  // Remove or replace with a valid prop
+  // sx={{ width: "400px" }}
+  value=""  // Choose consistent way to set initial value
+  onChange={e => {
+    // Implement your logic to handle user input
+    console.log(e.target.value);  // Example: log the new value
+  }}
+/>
 
-
-//new text field in after two grids
-
-            />
 
             </Grid>
             <Grid item xs={12}>
@@ -68,17 +68,20 @@ const userform = props => {
                     display:'block',
                 }}
             > Name</Typography>
-            <Input
-                type="text"
-                id='name'
-                name = "name"
-                sx ={{width:'400px'}}
-                value={''}
-                onChange={e =>{}}
+           <input
+  type="text"
+  id="name"
+  // Remove or replace with a valid prop
+  // sx={{ width: "400px" }}
+  value=""  // Choose consistent way to set initial value
+  onChange={e => {
+    // Implement your logic to handle user input
+    console.log(e.target.value);  // Example: log the new value
+  }}
+/>
 
+            
 
-
-            />
 
             </Grid>
 
