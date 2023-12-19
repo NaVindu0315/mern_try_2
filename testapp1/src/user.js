@@ -11,6 +11,10 @@ const users = [
     {
         id:2,
         name:'pakaya',
+    },
+    {
+        id:3,
+        name:'hutti',
     }
 
 ];
@@ -22,7 +26,7 @@ return(
 
         width: 'calc(100%- 100px)',
         margin : 'auto'
-        
+
      }}
     >
           <Userform/>
