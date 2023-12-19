@@ -4,7 +4,11 @@ import Userform from "./userform";
 const users = [
     {
         id:1,
-        name:'',
+        name:'Navindu',
+    },
+    {
+        id:2,
+        name:'pakaya',
     }
 
 ];
