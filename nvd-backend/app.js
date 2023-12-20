@@ -18,9 +18,9 @@ app.use(express.json());
 //creating getAPI data retrieving api
 app.get('/users',(req,res)=>{
     var resobj = [];
-    controller.getUsers(users =>
+    controller.getUsers(req,res,next =>
         {
-            res.send(users);
+            res.send();
         });
 
 
