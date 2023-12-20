@@ -4,6 +4,16 @@ const User = require('./model');
 
 //create user
 
+const addUser = (req,res,next)=>
+{
+    const user = new User(
+        {
+            id :  req.body.id,
+            name: req.body.name,
+        }
+    )
+}
+
 
 
 //retrieve user
