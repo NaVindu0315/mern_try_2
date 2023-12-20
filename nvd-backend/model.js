@@ -8,3 +8,5 @@ const userSchema = new Schema(
         name : String,
     }
 );
+
+const User = mongoose.model('User',userSchema);
