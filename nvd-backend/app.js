@@ -16,6 +16,7 @@ app.use(express.json());
 
 //creating getAPI data retrieving api
 app.get('/users',(req,res)=>{
+    var resobj = [];
     
 })
 
