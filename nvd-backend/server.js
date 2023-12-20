@@ -22,7 +22,9 @@ const connect = async() => {
         console.log('mongodb error ',error);
         
     }
+
 }
+connect();
 
 const server = app.listen(port,host,()=>{
     console.log('Node server is listenging to ${server.address().port} ');
