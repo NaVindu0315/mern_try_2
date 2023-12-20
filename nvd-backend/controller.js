@@ -44,6 +44,9 @@ const updateUser  = (req,res,next)=>
 {
     //object destructuring 
     const {id,name} = req.body;
+    User.updateOne({id:id}, { $set : {name :name}
+    })
+    
 }
 
 
