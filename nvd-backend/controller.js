@@ -40,8 +40,11 @@ const getUsers = (req,res,next)=>
 
 
 //update user
-
-
+const updateUser  = (req,res,next)=> 
+{
+    //object destructuring 
+    const {id,name} = req.body;
+}
 
 
 //delete user
