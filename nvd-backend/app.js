@@ -16,6 +16,7 @@ app.use(
 app.use(express.json());
 
 //creating getAPI data retrieving api
+//retreving data 
 app.get('/users',(req,res)=>{
     var resobj = [];
     controller.getUsers(req,res,next =>
@@ -25,14 +26,28 @@ app.get('/users',(req,res)=>{
 
 
 });
-//second 
-app.post('/user',(req,res)=>
+//adding new user
+app.post('/createuser',(req,res)=>
 {
     
     controller.addUser(req.body,(callback)=>
         {
             res.send();
-            
+
+
+        }
+    );
+
+});
+
+//update user 
+app.post('/updateuser',(req,res)=>
+{
+    
+    controller.updateUser(req.body,(callback)=>
+        {
+            res.send(callback);
+
 
         }
     );
