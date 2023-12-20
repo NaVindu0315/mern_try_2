@@ -22,3 +22,5 @@ const getUsersByID = (id,cb)=>
 {
     const user = users.find(user => user.id ==id)
 }
+
+exports.getUsers = getUsers;
