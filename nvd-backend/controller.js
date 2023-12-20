@@ -33,4 +33,4 @@ const getUsers = (req,res,next)=>
 
 
 exports.getUsers = getUsers;
-exports.getUsersByID =getUsersByID;
+//exports.getUsersByID =getUsersByID;
