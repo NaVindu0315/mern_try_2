@@ -1,21 +1,21 @@
-const users = 
-[
-    {
-        id:1,
-        name:'navindu',
-    },
-    {
-        id:2,
-        name:'pakaya'
+const { response } = require('./app');
+const User = require('./model');
 
-    }
-];
+
 //create user
 
 
 
-//view user
-
+//retrieve user
+const getUsers = (req,res,next)=>
+{
+    User.find()
+        .then(response=>
+            {
+                res.json({response})
+            }
+            )
+}
 
 
 
@@ -26,17 +26,9 @@ const users =
 
 //delete user
 
-//creating function
-const getUsers = (cb) =>
-{
-    cb(users);
-};
 
-//creating a function to get the user by id 
-const getUsersByID = (id,cb)=>
-{
-    const user = users.find(user => user.id ==id)
-}
+
+
 
 exports.getUsers = getUsers;
 exports.getUsersByID =getUsersByID;
