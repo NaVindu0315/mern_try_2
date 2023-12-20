@@ -3,6 +3,9 @@ const express = require('express');
 const router = express.Router();
 const controller = require('./controller');
  
-//creating routes for 
+//creating routes for each
 
-router.get('/users',con)
+router.get('/users',controller.getUsers);
+router.get('/users',controller.getUsers);
+router.get('/users',controller.getUsers);
+router.get('/users',controller.getUsers);
