@@ -10,6 +10,21 @@ const users =
 
     }
 ];
+//create user
+
+
+
+//view user
+
+
+
+
+//update user
+
+
+
+
+//delete user
 
 //creating function
 const getUsers = (cb) =>
