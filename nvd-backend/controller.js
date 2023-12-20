@@ -13,8 +13,10 @@ const getUsers = (req,res,next)=>
         .then(response=>
             {
                 res.json({response})
-            }
-            )
+            })
+            .catch(error=>{
+                res.json({message : error})
+            })
 }
 
 
