@@ -25,5 +25,13 @@ app.get('/users',(req,res)=>{
 
 
 });
+//second 
+app.get('/user',(req,res)=>
+{
+    const id  =req.query.id;
+    
+
+});
+
 
 module.exports = app;
