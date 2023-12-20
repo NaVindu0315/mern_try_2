@@ -18,8 +18,8 @@ const addUser = (req,res,next)=>
             res.json({response})
         })
         .catch(error=>{
-            res.json({message : error})
-        })
+            res.json({error})
+        });
 }
 
 
@@ -33,8 +33,8 @@ const getUsers = (req,res,next)=>
                 res.json({response})
             })
             .catch(error=>{
-                res.json({message : error})
-            })
+                res.json({error})
+            });
 }
 
 
