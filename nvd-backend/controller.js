@@ -11,7 +11,15 @@ const addUser = (req,res,next)=>
             id :  req.body.id,
             name: req.body.name,
         }
-    )
+    );
+    user.save()
+    .then(response=>
+        {
+            res.json({response})
+        })
+        .catch(error=>{
+            res.json({message : error})
+        })
 }
 
 
