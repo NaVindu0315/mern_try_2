@@ -1,7 +1,7 @@
-const app = require('./app');
+
 //variables
 const port =3001;
-const host ='127.0.0.1';
+const host ='localhost';
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
