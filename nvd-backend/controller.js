@@ -58,7 +58,11 @@ const updateUser  = (req,res,next)=>
 
 
 //delete user
-
+const deleteUser = (req,res,next)=>
+{
+    const id = req.body.id;
+    
+}
 
 
 
