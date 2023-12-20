@@ -24,3 +24,4 @@ const getUsersByID = (id,cb)=>
 }
 
 exports.getUsers = getUsers;
+exports.getUsersByID =getUsersByID;
