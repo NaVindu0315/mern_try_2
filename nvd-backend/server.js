@@ -8,6 +8,9 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors());
+app.use(express.json());
+
+const uri ="mongodb+srv://navindu0315:Navindu99@cluster0.do0vonn.mongodb.net/?retryWrites=true&w=majority"
 
 const server = app.listen(port,host,()=>{
     console.log('Node server is listenging to ${server.address().port} ');
