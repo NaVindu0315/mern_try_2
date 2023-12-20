@@ -7,6 +7,8 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 
+app.use(cors());
+
 const server = app.listen(port,host,()=>{
     console.log('Node server is listenging to ${server.address().port} ');
 });
