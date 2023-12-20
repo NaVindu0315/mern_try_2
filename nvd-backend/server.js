@@ -14,9 +14,12 @@ const uri ="mongodb+srv://navindu0315:Navindu99@cluster0.do0vonn.mongodb.net/?re
 const connect = async() => {
     try 
     {
+        await mongoose.connect(uri);
+        console.log('connected to mongodb');
 
     }
-    catch{
+    catch(error){
+        console.log('mongodb error ',error);
         
     }
 }
