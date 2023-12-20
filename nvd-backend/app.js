@@ -26,14 +26,16 @@ app.get('/users',(req,res)=>{
 
 });
 //second 
-app.get('/user',(req,res)=>
+app.post('/user',(req,res)=>
 {
-    const id  =req.query.id;
-    controller.getUsersByID(id,user =>
-        {
-            res.send(user);
-        })
     
+    controller.addUser(req.body,(callback)=>
+        {
+            res.send();
+            
+
+        }
+    );
 
 });
 
