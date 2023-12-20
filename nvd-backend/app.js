@@ -54,5 +54,19 @@ app.post('/updateuser',(req,res)=>
 
 });
 
+//delete user
+
+app.post('/deleteuser',(req,res)=>
+{
+    
+    controller.deleteUser(req.body,(callback)=>
+        {
+            res.send(callback);
+
+
+        }
+    );
+
+});
 
 module.exports = app;
