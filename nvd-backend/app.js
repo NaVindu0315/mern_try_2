@@ -29,6 +29,10 @@ app.get('/users',(req,res)=>{
 app.get('/user',(req,res)=>
 {
     const id  =req.query.id;
+    controller.getUsersByID(id,user =>
+        {
+            res.send(user);
+        })
     
 
 });
