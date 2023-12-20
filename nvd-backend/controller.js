@@ -62,7 +62,14 @@ const deleteUser = (req,res,next)=>
 {
     const id = req.body.id;
     User.deleteOne({id:id})
-    
+    .then(response=>
+        {
+            res.json({response})
+        })
+        .catch(error=>{
+            res.json({error})
+        });
+
 }
 
 
