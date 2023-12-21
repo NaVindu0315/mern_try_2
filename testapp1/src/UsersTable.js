@@ -3,7 +3,7 @@ import { Paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Butt
 //const IdCell = ({ row }) => <TableCell>{row.id}</TableCell>;
 
 //const NameCell = ({ row }) => <TableCell>{row.name}</TableCell>;
-const UsersTable = ({rows, selectedUser}) =>
+const UsersTable = ({rows, selectedUser,deleteUser}) =>
 {
     return(
 <TableContainer 

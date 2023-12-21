@@ -96,7 +96,7 @@ const Users =() =>
 
     }
     //delete function
-    const deleteUser = (id)=>{
+    const deleteUser = (data)=>{
 
         
      
@@ -137,6 +137,11 @@ return(
          selectedUser={data=>{
             setSelectedUser(data);
             setIsEdit(true);
+         }}
+         // calling the delete function
+         deleteUser={data=>{
+            //adding a confirmation box 
+            window.confirm('aru u sure ?')&& deleteUser
          }}
          
          />
