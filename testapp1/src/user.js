@@ -17,7 +17,9 @@ const Users =() =>
     {
         //the link given from the backend for getting users
         Axios.get('http://localhost:3001/api/users')
-            .then(Response=> )
+            .then(response=> {
+                console.log(response);
+            })
     }
 return(
     <Box 
