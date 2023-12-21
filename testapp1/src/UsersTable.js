@@ -46,6 +46,7 @@ const UsersTable = ({rows, selectedUser}) =>
                                 onClick={
                                     () =>
                                     {
+                                        deleteUser({id:row.id})
 
                                     }
                                 }
