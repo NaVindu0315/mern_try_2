@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Grid, Typography, Input } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
-const Userform = (props) => {
+const Userform = ({addUser,submitted}) => {
   //declaring stat
    const [id,setid] = useState(0);
    const [name,setname] = useState("");
@@ -10,6 +10,15 @@ const Userform = (props) => {
 
 
   const navigate = useNavigate();
+
+  //use effect
+  useEffect(()=>{
+    if(!submitted){
+      setid(0);
+      setname('');
+    }},
+    [submitted]
+  );
 
   return (
     <Grid
