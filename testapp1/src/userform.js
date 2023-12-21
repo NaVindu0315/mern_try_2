@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Userform = ({addUser,submitted}) => {
   //declaring stat
    const [id,setid] = useState(0);
-   const [name,setname] = useState("");
+   const [name,setname] = useState('');
 
 
 
@@ -91,6 +91,9 @@ const Userform = ({addUser,submitted}) => {
             backgroundColor: "#00c6e6",
           },
         }}
+        onClick={()=> 
+          addUser({id,name})
+        }
       >
         Submit
       </Button>
