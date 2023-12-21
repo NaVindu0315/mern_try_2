@@ -21,11 +21,11 @@ const Userform = ({addUser,submitted , data, isedit ,updateUser}) => {
   );
   ///for updating 
   useEffect(()=>{
-    if (  data?.id  &&data.id!==0 )
+    if (  data?.id  &&data.id!==0 ){
     setid(data.id);
   setname(data.name);
-  },[data]
-  );
+  }
+},[data]);
 
   return (
     <Grid
