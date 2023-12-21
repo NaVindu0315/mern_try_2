@@ -95,6 +95,11 @@ const Users =() =>
             }
 
     }
+    //delete function
+    const deleteUser = (id)=>{
+        
+    }
+
 return(
     <Box 
      sx={{
