@@ -63,6 +63,19 @@ const Users =() =>
          }
 
     }
+    //update user 
+    const updateUser=(data) =>
+    {
+        setSubmitted(true);
+           ///creating the payload
+           const payload=
+           {
+               id: data.id,
+               name: data.name,
+   
+           }
+
+    }
 return(
     <Box 
      sx={{
