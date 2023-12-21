@@ -71,7 +71,10 @@ return(
 
      }}
     >
-          <Userform/>
+          <Userform
+          //adding prop for user form
+          addUser ={addUser}
+          />
          <UsersTable rows= {users} />
 
     </Box>
