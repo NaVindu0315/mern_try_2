@@ -74,6 +74,7 @@ return(
           <Userform
           //adding prop for user form
           addUser ={addUser}
+          submitted ={submitted}
           />
          <UsersTable rows= {users} />
 
