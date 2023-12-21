@@ -1,15 +1,31 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Grid, Typography, Input } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
-const Userform = (props) => {
+const Userform = ({addUser,submitted , data, isedit ,updateUser}) => {
   //declaring stat
    const [id,setid] = useState(0);
-   const [name,setname] = useState("");
+   const [name,setname] = useState('');
 
 
 
   const navigate = useNavigate();
+
+  //use effect
+  useEffect(()=>{
+    if(!submitted){
+      setid(0);
+      setname('');
+    }},
+    [submitted]
+  );
+  ///for updating 
+  useEffect(()=>{
+    if (  data?.id  &&data.id!==0 ){
+    setid(data.id);
+  setname(data.name);
+  }
+},[data]);
 
   return (
     <Grid
@@ -82,8 +98,14 @@ const Userform = (props) => {
             backgroundColor: "#00c6e6",
           },
         }}
+        onClick={()=> isedit ? updateUser({id,name}) :
+          addUser({id,name})
+        }
       >
-        Submit
+        {
+          isedit? 'update' : 'add'
+        }
+       
       </Button>
 
       <Button
