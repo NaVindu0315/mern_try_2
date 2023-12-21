@@ -15,7 +15,9 @@ const Users =() =>
     //call the api
     const getUsers =() =>
     {
+        //the link given from the backend for getting users
         Axios.get('http://localhost:3001/api/users')
+            .then(Response=> )
     }
 return(
     <Box 
