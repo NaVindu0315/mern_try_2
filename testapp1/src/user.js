@@ -17,6 +17,8 @@ const Users =() =>
         const [submitted,setSubmitted] = useState(false);
         //when updating 
         const [isedit,setIsEdit] = useState(false);
+
+        //also in updating to fech the data
         
         //when calling a function when the page runs 
     useEffect(()=>
@@ -105,7 +107,12 @@ return(
           addUser ={addUser}
           submitted ={submitted}
           />
-         <UsersTable rows= {users} />
+         <UsersTable rows= {users} 
+         selecteduser={data=>{
+
+         }}
+         
+         />
 
     </Box>
   

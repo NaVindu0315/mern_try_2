@@ -34,6 +34,7 @@ const UsersTable = ({rows}) =>
                                 onClick={
                                     () =>
                                     {
+                                        
 
                                     }
                                 }
