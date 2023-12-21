@@ -8,6 +8,15 @@ import Axios from "axios";
 
 const Users =() =>
 {
+
+        //creating a state variable inside the Users component
+        const [users,setUsers] = useState([]);
+
+    //call the api
+    const getUsers =() =>
+    {
+        Axios.get('http://localhost:3001/api/users')
+    }
 return(
     <Box 
      sx={{
