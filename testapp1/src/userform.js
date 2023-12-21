@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Grid, Typography, Input } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
 
-const Userform = ({addUser,submitted}) => {
+const Userform = ({addUser,submitted , data, isedit}) => {
   //declaring stat
    const [id,setid] = useState(0);
    const [name,setname] = useState('');
@@ -102,6 +102,9 @@ const Userform = ({addUser,submitted}) => {
           addUser({id,name})
         }
       >
+        {
+          isedit? 'update' : 'add'
+        }
         Submit
       </Button>
 

@@ -106,14 +106,16 @@ return(
           <Userform
           //adding prop for user form
           addUser ={addUser}
+          updateUser ={updateUser}
           submitted ={submitted}
           //selecteduserdata
           data ={selectedUser}
+          isedit={isedit}
           />
          <UsersTable rows= {users} 
          selecteduser={data=>{
             setSelectedUser(data);
-            isedit(true);
+            setIsEdit(true);
          }}
          
          />
