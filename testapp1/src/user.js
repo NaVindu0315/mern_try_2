@@ -12,6 +12,9 @@ const Users =() =>
 
         //creating a state variable inside the Users component
         const [users,setUsers] = useState([]);
+
+        //to clear the fields once the data is submitted
+        const [submitted,setSubmitted] = useState(false);
         
         //when calling a function when the page runs 
     useEffect(()=>
