@@ -15,6 +15,8 @@ const Users =() =>
 
         //to clear the fields once the data is submitted
         const [submitted,setSubmitted] = useState(false);
+        //when updating 
+        const [isedit,setIsEdit] = useState(false);
         
         //when calling a function when the page runs 
     useEffect(()=>
@@ -54,6 +56,7 @@ const Users =() =>
             // console.log(response.data.response);
            getUsers();
            setSubmitted(false);
+           isedit(false);
          })
          .catch(error => {
              console.error("Axios Error :" ,error);
