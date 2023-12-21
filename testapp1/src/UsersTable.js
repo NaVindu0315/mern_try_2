@@ -1,8 +1,8 @@
 
 import { Paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Button, Table} from "@mui/material";
-const IdCell = ({ row }) => <TableCell>{row.id}</TableCell>;
+//const IdCell = ({ row }) => <TableCell>{row.id}</TableCell>;
 
-const NameCell = ({ row }) => <TableCell>{row.name}</TableCell>;
+//const NameCell = ({ row }) => <TableCell>{row.name}</TableCell>;
 const UsersTable = ({rows}) =>
 {
     return(
@@ -27,8 +27,8 @@ const UsersTable = ({rows}) =>
                         rows.length > 0 ?  rows.map((row) => 
                             (
                             <TableRow key={row.id} sx ={{'&:last-child td,&:last-child th':{border:0}}}>
-                             <IdCell row={row} />
-                            <NameCell row={row} />
+                            <TableCell component='th' scope="row">{row.id}</TableCell>
+                            <TableCell component='th' scope="row">{row.name}</TableCell>
                              <TableCell>
                                 <Button sx={{margin:'0px 10px'}}
                                 onClick={
