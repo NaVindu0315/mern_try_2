@@ -34,6 +34,12 @@ const Users =() =>
 
             }
     }
+    //adduser function
+
+    const addUser = ()=>
+    {
+
+    }
 return(
     <Box 
      sx={{
