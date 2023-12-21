@@ -97,7 +97,22 @@ const Users =() =>
     }
     //delete function
     const deleteUser = (id)=>{
+
         
+     
+        Axios.post('http://localhost:3001/api/deleteuser',id)
+        .then(response=> {
+            // console.log(response.data.response);
+           getUsers();
+           
+         })
+         .catch(error => {
+             console.error("Axios Error :" ,error);
+         })
+                     {
+
+         }
+
     }
 
 return(
