@@ -105,7 +105,7 @@ const Userform = ({addUser,submitted , data, isedit ,updateUser}) => {
         {
           isedit? 'update' : 'add'
         }
-        Submit
+       
       </Button>
 
       <Button
