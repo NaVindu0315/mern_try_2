@@ -74,6 +74,18 @@ const Users =() =>
                name: data.name,
    
            }
+           Axios.post('http://localhost:3001/api/createuser',payload)
+           .then(response=> {
+               // console.log(response.data.response);
+              getUsers();
+              setSubmitted(false);
+            })
+            .catch(error => {
+                console.error("Axios Error :" ,error);
+            })
+                        {
+   
+            }
 
     }
 return(
