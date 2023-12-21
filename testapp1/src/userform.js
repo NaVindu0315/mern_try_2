@@ -19,6 +19,13 @@ const Userform = ({addUser,submitted}) => {
     }},
     [submitted]
   );
+  ///for updating 
+  useEffect(()=>{
+    if (  data?.id  &&data.id!==0 )
+    setid(data.id);
+  setname(data.name);
+  },[data]
+  );
 
   return (
     <Grid
