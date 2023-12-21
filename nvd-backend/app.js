@@ -55,6 +55,7 @@ app.post('/updateuser',(req,res)=>
 });
 
 //delete user
+//lakshan
 
 app.post('/deleteuser',(req,res)=>
 {
