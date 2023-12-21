@@ -100,7 +100,7 @@ const Users =() =>
 
         
      
-        Axios.post('http://localhost:3001/api/deleteuser',id)
+        Axios.post('http://localhost:3001/api/deleteuser',data)
         .then(response=> {
             // console.log(response.data.response);
            getUsers();
@@ -141,7 +141,7 @@ return(
          // calling the delete function
          deleteUser={data=>{
             //adding a confirmation box 
-            window.confirm('aru u sure ?')&& deleteUser
+            window.confirm('aru u sure ?')&& deleteUser(data);
          }}
          
          />
