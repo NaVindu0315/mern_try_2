@@ -85,6 +85,7 @@ const Users =() =>
                // console.log(response.data.response);
               getUsers();
               setSubmitted(false);
+              isedit(false);
             })
             .catch(error => {
                 console.error("Axios Error :" ,error);
