@@ -36,10 +36,14 @@ const Users =() =>
     }
     //adduser function
 
-    const addUser = ()=>
+    const addUser = (data)=>
     {
         ///creating the payload
-        const payload
+        const payload=
+        {
+            id:
+
+        }
         Axios.post('http://localhost:3001/api/createuser',payload)
 
     }
