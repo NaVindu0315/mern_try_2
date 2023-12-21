@@ -107,6 +107,8 @@ return(
           //adding prop for user form
           addUser ={addUser}
           submitted ={submitted}
+          //selecteduserdata
+          data ={selectedUser}
           />
          <UsersTable rows= {users} 
          selecteduser={data=>{
