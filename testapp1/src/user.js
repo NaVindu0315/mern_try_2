@@ -95,6 +95,24 @@ const Users =() =>
             }
 
     }
+    //delete function
+    const deleteUser = (data)=>{
+
+        
+     
+        Axios.post('http://localhost:3001/api/deleteuser',data)
+        .then(response=> {
+            // console.log(response.data.response);
+           getUsers();
+           
+         })
+         .catch(error => {
+             console.error("Axios Error :" ,error);
+         });
+                    
+
+    }
+
 return(
     <Box 
      sx={{
@@ -119,6 +137,11 @@ return(
          selectedUser={data=>{
             setSelectedUser(data);
             setIsEdit(true);
+         }}
+         // calling the delete function
+         deleteUser={data=>{
+            //adding a confirmation box 
+            window.confirm('aru u sure ?')&& deleteUser(data);
          }}
          
          />
