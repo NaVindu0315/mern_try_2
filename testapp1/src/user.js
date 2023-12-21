@@ -110,7 +110,8 @@ return(
           />
          <UsersTable rows= {users} 
          selecteduser={data=>{
-
+            setSelectedUser(data);
+            isedit(true);
          }}
          
          />
