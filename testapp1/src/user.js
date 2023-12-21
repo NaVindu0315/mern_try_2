@@ -4,7 +4,7 @@ import Userform from "./userform";
 import UsersTable from "./UsersTable";
 //import for connecting backend and front end
 import Axios from "axios";
-import { useEffect } from "react";
+import { useEffect ,useState } from "react";
 
 
 const Users =() =>
@@ -24,7 +24,7 @@ const Users =() =>
         //the link given from the backend for getting users
         Axios.get('http://localhost:3001/api/users')
             .then(response=> {
-                console.log(response);
+                console.log(response.data.response);
             })
     }
 return(
