@@ -3,7 +3,7 @@ import { Paper, TableCell, TableContainer, TableHead, TableRow , TableBody, Butt
 //const IdCell = ({ row }) => <TableCell>{row.id}</TableCell>;
 
 //const NameCell = ({ row }) => <TableCell>{row.name}</TableCell>;
-const UsersTable = ({rows, setSelectedUser}) =>
+const UsersTable = ({rows, selectedUser}) =>
 {
     return(
 <TableContainer 
@@ -33,7 +33,7 @@ const UsersTable = ({rows, setSelectedUser}) =>
                                 <Button sx={{margin:'0px 10px'}}
                                 onClick={
                                     () =>
-                                    setSelectedUser({
+                                    selectedUser({
                                         id: row.id,
                                         name : row.name
                                     })

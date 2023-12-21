@@ -114,7 +114,7 @@ return(
           isedit={isedit}
           />
          <UsersTable rows= {users} 
-         selecteduser={data=>{
+         selectedUser={data=>{
             setSelectedUser(data);
             setIsEdit(true);
          }}
