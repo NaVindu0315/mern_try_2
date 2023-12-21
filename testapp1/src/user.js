@@ -24,7 +24,8 @@ const Users =() =>
         //the link given from the backend for getting users
         Axios.get('http://localhost:3001/api/users')
             .then(response=> {
-                console.log(response.data.response);
+               // console.log(response.data.response);
+               setUsers(response?.data?.response)
             })
     }
 return(
