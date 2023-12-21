@@ -4,6 +4,7 @@ import Userform from "./userform";
 import UsersTable from "./UsersTable";
 //import for connecting backend and front end
 import Axios from "axios";
+import { useEffect } from "react";
 
 
 const Users =() =>
@@ -11,7 +12,12 @@ const Users =() =>
 
         //creating a state variable inside the Users component
         const [users,setUsers] = useState([]);
-
+        
+        //when calling a function when the page runs 
+    useEffect(()=>
+        {
+            getUsers();
+        },[]);
     //call the api
     const getUsers =() =>
     {
