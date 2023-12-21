@@ -41,6 +41,7 @@ const Users =() =>
 
     const addUser = (data)=>
     {
+        setSubmitted(true);
         ///creating the payload
         const payload=
         {
