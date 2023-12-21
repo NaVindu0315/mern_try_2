@@ -108,10 +108,8 @@ const Users =() =>
          })
          .catch(error => {
              console.error("Axios Error :" ,error);
-         })
-                     {
-
-         }
+         });
+                    
 
     }
 
