@@ -113,6 +113,8 @@ return(
           data ={selectedUser}
           isedit={isedit}
           />
+
+          
          <UsersTable rows= {users} 
          selectedUser={data=>{
             setSelectedUser(data);
