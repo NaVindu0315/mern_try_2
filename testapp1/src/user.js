@@ -19,6 +19,7 @@ const Users =() =>
         const [isedit,setIsEdit] = useState(false);
 
         //also in updating to fech the data
+        const [selectedUser,setSelectedUser]= useState({});
         
         //when calling a function when the page runs 
     useEffect(()=>
