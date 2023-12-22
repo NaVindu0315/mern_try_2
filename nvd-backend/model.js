@@ -9,6 +9,7 @@ const userSchema = new Schema(
     }
 );
 
-const User = mongoose.model('User',userSchema);
-
+//const User = mongoose.model('User',userSchema);
+//trying to chnge the  collection
+const User = mongoose.model('employees',userSchema);
 module.exports = User;
