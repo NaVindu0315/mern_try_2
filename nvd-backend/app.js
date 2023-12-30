@@ -54,8 +54,7 @@ app.post('/updateuser',(req,res)=>
 
 });
 
-//delete user
-//navindu
+
 
 app.post('/deleteuser',(req,res)=>
 {
