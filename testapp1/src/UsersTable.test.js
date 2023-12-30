@@ -1,44 +1,67 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import UsersTable from './UsersTable';
 
-test('renders the table with data', () => {
-  const rows = [
-    { id: 1, name: 'Alice' },
-    { id: 2, name: 'Bob' },
+describe('UsersTable Component', () => {
+  const rowsWithData = [
+    { id: 1, name: 'User 1' },
+    { id: 2, name: 'User 2' },
   ];
-  const selectedUser = jest.fn();
-  const deleteUser = jest.fn();
 
-  render(<UsersTable rows={rows} selectedUser={selectedUser} deleteUser={deleteUser} />);
+  const emptyRows = [];
 
-  expect(screen.getByText('ID')).toBeInTheDocument();
-  expect(screen.getByText('Name')).toBeInTheDocument();
-  expect(screen.getByText('Actions')).toBeInTheDocument();
-  expect(screen.getAllByRole('cell', { name: /Alice/i })).toHaveLength(2);
-  expect(screen.getAllByRole('cell', { name: /Bob/i })).toHaveLength(2);
+  it('renders table with data', () => {
+    const { getByText, getAllByRole } = render(
+      <UsersTable rows={rowsWithData} />
+    );
+
+    // Check if the table headers are present
+    expect(getByText('ID')).toBeInTheDocument();
+    expect(getByText('Name')).toBeInTheDocument();
+    expect(getByText('Actions')).toBeInTheDocument();
+
+    // Check if rows with data are rendered
+    const tableRows = getAllByRole('row');
+    expect(tableRows.length).toBe(rowsWithData.length + 1); // +1 for table header row
+  });
+
+  it('renders table with no data', () => {
+    const { getByText } = render(<UsersTable rows={emptyRows} />);
+
+    // Check if "No Data" message is displayed
+    expect(getByText('No Data')).toBeInTheDocument();
+  });
+
+  it('calls selectedUser function when Update button is clicked', () => {
+    const selectedUserMock = jest.fn();
+
+    const { getByText } = render(
+      <UsersTable rows={rowsWithData} selectedUser={selectedUserMock} />
+    );
+
+    const updateButtons = getAllByText('Update');
+    fireEvent.click(updateButtons[0]); // Click the first Update button
+
+    // Check if the selectedUser function is called with the correct arguments
+    expect(selectedUserMock).toHaveBeenCalledWith({
+      id: rowsWithData[0].id,
+      name: rowsWithData[0].name,
+    });
+  });
+
+  it('calls deleteUser function when Delete button is clicked', () => {
+    const deleteUserMock = jest.fn();
+
+    const { getAllByText } = render(
+      <UsersTable rows={rowsWithData} deleteUser={deleteUserMock} />
+    );
+
+    const deleteButtons = getAllByText('Delete');
+    fireEvent.click(deleteButtons[0]); // Click the first Delete button
+
+    // Check if the deleteUser function is called with the correct arguments
+    expect(deleteUserMock).toHaveBeenCalledWith({
+      id: rowsWithData[0].id,
+    });
+  });
 });
-
-test('renders a message when there is no data', () => {
-    const rows = [];
-    const selectedUser = jest.fn();
-    const deleteUser = jest.fn();
-  
-    render(<UsersTable rows={rows} selectedUser={selectedUser} deleteUser={deleteUser} />);
-  
-    expect(screen.getByText('No Data')).toBeInTheDocument();
-  });
-
-  test('calls the selectedUser function when a user is selected', () => {
-    const rows = [{ id: 1, name: 'Alice' }];
-    const selectedUser = jest.fn();
-    const deleteUser = jest.fn();
-  
-    render(<UsersTable rows={rows} selectedUser={selectedUser} deleteUser={deleteUser} />);
-  
-    const updateButton = screen.getByRole('button', { name: /Update/i });
-    fireEvent.click(updateButton);
-  
-    expect(selectedUser).toHaveBeenCalledWith({ id: 1, name: 'Alice' });
-  });
-  
